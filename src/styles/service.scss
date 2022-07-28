@@ -1,0 +1,264 @@
+@media screen and (min-width:$grid-breakpoints-xs) {
+    .services__all {
+        padding: 56px 0 42px 0;
+    }
+
+    .services {
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 249px 249px 249px 249px;
+        grid-template-columns: 290px;
+        grid-template-areas:
+            "m"
+            "h"
+            "a"
+            "f";
+        grid-gap: 15px;
+    }
+
+    .service {
+        background-color: #6CA7EF;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 20px;
+
+        p {
+            margin: 27px 0 0 0;
+            line-height: 120%;
+        }
+
+        &__market {
+            grid-area: m;
+
+            p {
+                width: 270px;
+            }
+        }
+
+        &__idea {
+            grid-area: h;
+
+            p {
+                width: 300px;
+            }
+        }
+
+        &__search {
+            grid-area: a;
+
+            p {
+                width: 213px;
+            }
+        }
+
+        &__space {
+            grid-area: f;
+
+            p {
+                width: 242px;
+            }
+        }
+    }
+
+    .services__cube {
+        display: none;
+    }
+
+    .services__line {
+        display: none;
+    }
+
+
+    .services__title {
+        text-align: center;
+        margin: 0 0 22px 0;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        position: relative;
+        z-index: 3;
+    }
+
+    .service object {
+        width: 68px;
+    }
+
+    .service__space object {
+        width: 45px;
+    }
+}
+
+@media screen and (min-width:375px) {
+    .services {
+        grid-template-columns: 340px;
+    }
+}
+
+@media screen and (min-width:$grid-breakpoints-sm) {
+    .services {
+        grid-template-areas:
+            "m h"
+            "a f";
+        grid-template-rows: 249px 249px;
+        grid-template-columns: 1fr 1fr;
+
+        padding: 0 16px;
+    }
+
+    .services__title {
+        margin: 0 0 45px 53px;
+        text-align: left;
+    }
+
+    .service p {
+        width: 270px;
+    }
+}
+
+@media screen and (min-width:$grid-breakpoints-md) {
+
+    .services__all {
+        position: relative;
+        padding: 64px 0 42px 0;
+    }
+
+    .service p {
+        margin: 28px 0 0 0;
+    }
+
+    .service__idea {
+        flex-direction: column;
+
+        p {
+            width: 343px;
+        }
+    }
+
+    .services__cube {
+        display: block;
+        position: absolute;
+        top: 2%;
+        left: 5%;
+    }
+
+    .services__line {
+        display: block;
+        position: absolute;
+        top: 1%;
+        left: 11%;
+        width: 430px;
+    }
+}
+
+@media screen and (min-width:$grid-breakpoints-lg) {
+    .services__cube {
+        top: 3%;
+        left: 4%;
+    }
+
+    .services__line {
+        width: 476px;
+        top: -1%;
+        left: 11%;
+    }
+}
+
+@media screen and (min-width:$grid-breakpoints-xl) {
+    .services__all {
+        position: relative;
+        padding: 87px 0 66px 0;
+    }
+
+    .service object {
+        width: 80px;
+    }
+
+    .service__space object {
+        width: 45px;
+    }
+
+    .services {
+        display: grid;
+        grid-template-rows: 163px 313px;
+        grid-template-columns: 383px 383px;
+        grid-template-areas:
+            "m h h"
+            "m a f"
+            "m a f";
+        grid-gap: 15px;
+        justify-content: unset;
+        padding: 0;
+
+        &__title {
+            font-size: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin: 0 0 81px 53px;
+            letter-spacing: 1px;
+            position: relative;
+            z-index: 3;
+        }
+    }
+
+    .service {
+        border-radius: 20px;
+
+        p {
+            margin: 34px 0 0 0;
+            line-height: 120%;
+        }
+
+        &__market {
+            grid-area: m;
+
+            p {
+                width: 270px;
+            }
+        }
+
+        &__idea {
+            grid-area: h;
+            flex-direction: row;
+
+            p {
+                width: 460px;
+                margin: 0 0 0 39px;
+            }
+        }
+
+        &__search {
+            grid-area: a;
+
+            p {
+                width: 213px;
+            }
+        }
+
+        &__space {
+            grid-area: f;
+
+            p {
+                width: 242px;
+            }
+        }
+    }
+
+    .services__cube {
+        position: absolute;
+        top: 7%;
+        left: 10%;
+        z-index: 0
+    }
+
+    .services__line {
+        position: absolute;
+        top: -6%;
+        left: 16%;
+        width: 738px;
+    }
+}
