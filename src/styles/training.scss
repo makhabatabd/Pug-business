@@ -48,26 +48,12 @@
             line-height: 22px;
             margin: 0 0 5px 0;
         }
-
-        button {
-            margin: 23px 0 39px 0;
-            background: #287EE7;
-            border-radius: 8px;
-            text-transform: uppercase;
-            width: 229px;
-            padding: 14px 0;
-            vertical-align: middle;
-            color: white;
-
-            img {
-                margin: 0 0 0 44px;
-            }
-        }
     }
 
     &__point--text {
         width: 413px;
         line-height: 22px;
+        font-size: 17px;
     }
 
     &__points {
@@ -77,5 +63,106 @@
     &__point {
         align-items: flex-start;
         margin-bottom: 12px;
+        margin-right: 10px;
+    }
+
+    &__button {
+        display: inline-block;
+        margin: 23px 0 39px 0;
+        background: #287EE7;
+        border-radius: 8px;
+        text-transform: uppercase;
+        width: 229px;
+        padding: 14px 0;
+        vertical-align: middle;
+        text-align: center;
+        color: white;
+
+        img {
+            margin: 0 0 0 44px;
+        }
+    }
+}
+
+.md__button {
+    display: none;
+}
+
+
+@media screen and (max-width:$grid-breakpoints-lg) {
+    .training__theme {
+        margin-left: 20px;
+
+        h3 {
+            font-size: 22px;
+            line-height: 28px;
+            margin: 39px 0 12px 0;
+
+        }
+    }
+
+    .training__point .training__point--text {
+        width: 270px;
+    }
+}
+
+@media screen and (max-width:$grid-breakpoints-md) {
+    .training {
+        background-image: none;
+
+        &__block {
+            flex-direction: column;
+        }
+
+        &__cube {
+            display: none;
+        }
+
+        &__theme {
+            width: 100%;
+            text-align: center;
+            margin-left: 0px;
+
+            p {
+                width: 92%;
+                margin: 0 auto 8px;
+            }
+        }
+
+        &__points {
+            margin-top: 0px;
+        }
+
+        &__point {
+            justify-content: center;
+            margin-bottom: 30px;
+            margin-top: 20px;
+        }
+
+        &__button {
+            display: none;
+        }
+
+    }
+
+
+    .md__button {
+        display: block;
+        margin: 10px auto 30px;
+    }
+
+    .training__point .training__point--text {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:$grid-breakpoints-sm) {
+    .training__point .training__point--text {
+        width: 196px;
+    }
+
+    .training__theme p {
+        font-size: 17px;
+        width: 97%;
     }
 }

@@ -35,6 +35,10 @@ module.exports = {
       filename: "training.html",
       template: "./src/pages/training.html",
     }),
+    new HTMLWebpackPlugin({
+      filename: "information.html",
+      template: "./src/pages/information.html",
+    }),
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin({
       patterns: [

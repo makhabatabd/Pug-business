@@ -1,0 +1,129 @@
+.info {
+    background-image: url(../assets/media/plan-background.png);
+    background-repeat: no-repeat;
+    background-position: 119% 4%;
+    overflow: auto;
+
+    &__top {
+        margin-top: 40px;
+    }
+
+    &__theme {
+        margin: -8px 0 25px 0;
+    }
+
+    &__button {
+        background: #47CF34;
+        border-radius: 8px;
+        padding: 14px 0;
+        color: white;
+        font-size: 16px;
+        width: 287px;
+        margin-left: 42px;
+        text-transform: uppercase;
+        vertical-align: middle;
+    }
+
+    &__points {
+        margin-bottom: 53px;
+    }
+
+    &__bottom {
+        margin: 163px 0 30px 0;
+        background-image: url(../assets/media/information-cubes.png);
+        background-repeat: no-repeat;
+        background-position: 103% 50%;
+        position: relative;
+
+        h4 {
+            font-family: 'Montserrat',
+                sans-serif;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 37px;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+    }
+
+
+    &__dots h5 {
+        font-family: 'Montserrat',
+            sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        margin: 45px 0 19px 0;
+    }
+
+    &__point {
+        margin-left: 43px;
+        margin-bottom: 11px;
+        align-items: baseline;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+
+    &__consult {
+        margin-top: 96px;
+    }
+
+    &__dots--inner {
+        margin-left: 40px;
+    }
+
+    &__line {
+        position: absolute;
+        top: 85%;
+        right: 15%;
+        z-index: -1;
+    }
+}
+
+@media screen and (max-width:$grid-breakpoints-md) {
+
+    .info {
+        background-image: none;
+
+        &__bottom {
+            background-image: none;
+            margin-top: 100px;
+        }
+
+        &__line {
+            display: none;
+        }
+
+        &__title {
+            text-align: center;
+        }
+
+        &__button {
+            margin: 0 auto;
+        }
+    }
+
+    .button__div {
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
+
+@media screen and (max-width:$grid-breakpoints-sm) {
+    .info__point {
+        margin-left: 20px;
+    }
+
+    .info__bottom {
+        margin-top: 60px;
+    }
+
+    .info__dots--inner {
+        margin-left: 20px;
+    }
+}

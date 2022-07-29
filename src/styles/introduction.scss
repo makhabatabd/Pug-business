@@ -53,6 +53,11 @@
             width: 264px;
             height: 48px;
             text-transform: uppercase;
+            transition-delay: 0.2s;
+
+            &:hover {
+                background-color: #30B01E;
+            }
         }
 
         svg {
