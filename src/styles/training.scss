@@ -1,0 +1,81 @@
+.training {
+    background-image: url(../assets/media/plan-background.png);
+    background-repeat: no-repeat;
+    background-position: 119% 7%;
+    overflow: auto;
+    margin-bottom: 55px;
+
+    &__top {
+        margin-top: 51px;
+        position: relative;
+        z-index: 3;
+    }
+
+    &__cube {
+        position: absolute;
+        top: -13%;
+        left: 8%;
+        z-index: -1;
+    }
+
+    &__block {
+        background: #FFFFFF;
+        box-shadow: 4px 4px 20px rgba(40, 44, 55, 0.2);
+        border-radius: 20px;
+        max-width: 1173px;
+        display: flex;
+        margin-bottom: 40px;
+    }
+
+    &__theme {
+        margin-left: 38px;
+        width: 44%;
+        margin-right: 40px;
+
+        h3 {
+            font-family: 'Montserrat',
+                sans-serif;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 37px;
+            margin: 39px 0 29px 0;
+            letter-spacing: 2px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            margin: 0 0 5px 0;
+        }
+
+        button {
+            margin: 23px 0 39px 0;
+            background: #287EE7;
+            border-radius: 8px;
+            text-transform: uppercase;
+            width: 229px;
+            padding: 14px 0;
+            vertical-align: middle;
+            color: white;
+
+            img {
+                margin: 0 0 0 44px;
+            }
+        }
+    }
+
+    &__point--text {
+        width: 413px;
+        line-height: 22px;
+    }
+
+    &__points {
+        margin-top: 50px;
+    }
+
+    &__point {
+        align-items: flex-start;
+        margin-bottom: 12px;
+    }
+}

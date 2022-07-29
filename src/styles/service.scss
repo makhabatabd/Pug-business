@@ -1,6 +1,6 @@
 @media screen and (min-width:$grid-breakpoints-xs) {
     .services__all {
-        padding: 56px 0 42px 0;
+        padding: 56px 0 44px 0;
     }
 
     .services {
@@ -29,6 +29,12 @@
         p {
             margin: 27px 0 0 0;
             line-height: 120%;
+        }
+
+        a {
+            color: white;
+            margin: 0;
+            padding: 0;
         }
 
         &__market {
@@ -123,8 +129,8 @@
 @media screen and (min-width:$grid-breakpoints-md) {
 
     .services__all {
-        position: relative;
         padding: 64px 0 42px 0;
+        position: relative;
     }
 
     .service p {
@@ -170,9 +176,10 @@
 
 @media screen and (min-width:$grid-breakpoints-xl) {
     .services__all {
+        padding: 87px 0 101px 0;
         position: relative;
-        padding: 87px 0 66px 0;
     }
+
 
     .service object {
         width: 80px;
@@ -250,14 +257,14 @@
 
     .services__cube {
         position: absolute;
-        top: 7%;
+        top: 6%;
         left: 10%;
         z-index: 0
     }
 
     .services__line {
         position: absolute;
-        top: -6%;
+        top: -5%;
         left: 16%;
         width: 738px;
     }

@@ -27,6 +27,14 @@ module.exports = {
       filename: "index.html",
       template: "./src/pages/index.html",
     }),
+    new HTMLWebpackPlugin({
+      filename: "plan.html",
+      template: "./src/pages/plan.html",
+    }),
+    new HTMLWebpackPlugin({
+      filename: "training.html",
+      template: "./src/pages/training.html",
+    }),
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin({
       patterns: [

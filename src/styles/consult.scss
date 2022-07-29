@@ -1,0 +1,122 @@
+.consult {
+    position: relative;
+    margin-bottom: 94px;
+    margin-top: 160px;
+
+    &__cube--1 {
+        position: absolute;
+        top: 41%;
+        left: 13%;
+    }
+
+    &__cube--2 {
+        position: absolute;
+        top: -20%;
+        left: 20%;
+    }
+
+    &__cube--3 {
+        position: absolute;
+        top: 39%;
+        left: 70%;
+    }
+
+    &__modal {
+        margin: 0 auto;
+        background: #FFFFFF;
+        border-radius: 20px;
+        box-shadow: (4px 4px 20px rgba(40, 44, 55, 0.2));
+        max-width: 643px;
+        height: 349px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 10;
+    }
+}
+
+.modal__input {
+    width: 530px;
+    background: #FFFFFF;
+    border: 1px solid #9FA7B0;
+    border-radius: 8px;
+    padding: 14px 0 14px 21px;
+    margin-bottom: 23px;
+
+    &::placeholder {
+        color: #9FA7B0;
+        font-size: 18px;
+    }
+}
+
+.modal__button {
+    width: 530px;
+    background: #47CF34;
+    border-radius: 8px;
+    text-transform: uppercase;
+    color: white;
+    padding: 14px 0;
+    outline: none;
+    border: none;
+}
+
+@media screen and (max-width:$grid-breakpoints-xl) {
+    .consult {
+        margin-top: 120px;
+
+        &__cube--1 {
+            position: absolute;
+            top: 71%;
+            left: 12%;
+        }
+
+        &__cube--2 {
+            position: absolute;
+            top: -23%;
+            left: 7%;
+        }
+
+        &__cube--3 {
+            position: absolute;
+            top: 34%;
+            left: 68%;
+        }
+    }
+}
+
+@media screen and (max-width:$grid-breakpoints-md) {
+
+    .consult {
+        margin-top: 80px;
+
+        &__cube--1,
+        &__cube--2,
+        &__cube--3 {
+            display: none;
+        }
+    }
+
+}
+
+@media screen and (max-width:$grid-breakpoints-md) {
+    .modal__input {
+        width: 350px;
+    }
+
+    .modal__button {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:$grid-breakpoints-sm) {
+    .modal__input {
+        width: 250px;
+    }
+
+    .modal__button {
+        width: 250px;
+        font-size: 14px;
+    }
+}

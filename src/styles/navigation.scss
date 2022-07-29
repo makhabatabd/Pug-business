@@ -1,0 +1,21 @@
+.navigation {
+    margin: 65px 0 0px 0;
+    color: #9FA7B0;
+    font-size: 14px;
+    font-weight: 400;
+    z-index: -1;
+
+    & span {
+        margin-right: 13px;
+    }
+
+    &__inner span:last-child {
+        color: #282C37;
+    }
+}
+
+@media screen and (max-width:$grid-breakpoints-md) {
+    .navigation {
+        margin: 40px 0 0 0;
+    }
+}

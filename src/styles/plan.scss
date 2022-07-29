@@ -1,0 +1,124 @@
+.plan {
+    background-image: url(../assets/media/plan-background.png);
+    background-repeat: no-repeat;
+    background-position: 119% 4%;
+    overflow: auto;
+}
+
+.plan__top {
+    padding-top: 42px;
+}
+
+.plan__intro {
+    position: relative;
+
+    h2 {
+        font-family: 'Montserrat',
+            sans-serif;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 54px;
+        width: 85%;
+        margin: 0 0 29px 0;
+        position: relative;
+        z-index: 10;
+    }
+
+    img {
+        position: absolute;
+        top: -29%;
+        left: -2%;
+        z-index: 0;
+    }
+}
+
+
+.plan__points {
+    margin: 0 0 71px 43px;
+}
+
+.plan__point {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+    margin-bottom: 10px;
+
+    p {
+        margin: 0;
+    }
+}
+
+.point__image {
+    width: 23px;
+    height: 25px;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:$grid-breakpoints-xl) {
+    .plan__intro h2 {
+        font-size: 40px;
+    }
+
+    .plan__intro img {
+        top: -20%;
+        left: -1%;
+    }
+}
+
+@media screen and (max-width:$grid-breakpoints-md) {
+
+    .plan {
+        background-image: none;
+    }
+
+    .plan__top {
+        padding-top: 25px;
+    }
+
+    .plan__intro {
+        position: relative;
+
+        h2 {
+            font-size: 34px;
+            line-height: 37px;
+            margin: 0 0 29px 0;
+            width: 98%;
+        }
+
+        img {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:$grid-breakpoints-sm) {
+
+    .plan__top {
+        padding-top: 20px;
+    }
+
+    .plan__points {
+        margin: 0 0 50px 10px;
+    }
+
+    .plan__point {
+        gap: 18px;
+
+        p {
+            font-size: 16px;
+            width: 350px;
+        }
+
+    }
+
+    .plan__intro h2 {
+        font-size: 21px;
+        margin: 0 0 20px 0;
+        line-height: 26px;
+    }
+
+}
