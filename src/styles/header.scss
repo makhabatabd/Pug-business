@@ -39,10 +39,10 @@
         margin-right: 70px;
     }
 
-    &__item a:hover {
-        transition: 0.2s;
-        -webkit-text-stroke: 1px black;
+    .active {
+        font-weight: 700;
     }
+
 
     &__icons {
         display: flex;

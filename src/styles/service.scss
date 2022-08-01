@@ -29,7 +29,7 @@
 
         &:hover {
             background-color: #5391DC;
-            ;
+            cursor: pointer;
         }
 
         p {
@@ -236,7 +236,11 @@
 
         &__idea {
             grid-area: h;
-            flex-direction: row;
+
+            a {
+                display: flex;
+                align-items: center;
+            }
 
             p {
                 width: 460px;

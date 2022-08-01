@@ -3,7 +3,6 @@ if (document.querySelector(".plan") || document.querySelector(".info")) {
   const email = document.querySelector(".modal__email");
   const button = document.getElementById("button");
 
-  console.log(button);
   const validRegex =
     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 

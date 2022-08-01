@@ -1,15 +1,15 @@
 .navigation {
     margin: 65px 0 0px 0;
-    color: #9FA7B0;
     font-size: 14px;
     font-weight: 400;
     z-index: -1;
 
-    & span {
+    & a {
         margin-right: 13px;
+        color: #9FA7B0;
     }
 
-    &__inner span:last-child {
+    &__inner a:last-child {
         color: #282C37;
     }
 }

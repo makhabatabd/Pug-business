@@ -1,10 +1,34 @@
 @font-face {
-    font-family: "Poppins";
-    src: url(../assets/fonts/Lato-Regular.ttf) format(".ttf");
+    font-family: "Roboto", sans-serif;
+    src: url("../assets/fonts/Roboto-Regular.ttf") format(".ttf");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'Montserrat',
-        sans-serif;
-    src: url(../assets/fonts/Montserrat-Bold.ttf) format(".ttf");
+    font-family: "Montserrat", sans-serif;
+    src: url("../assets/fonts/Montserrat-Bold.ttf") format(".ttf");
+    font-weight: bold;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Lato', sans-serif;
+    src: url("../assets/fonts/Lato-Regular.ttf") format(".ttf");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Lato', sans-serif;
+    src: url("../assets/fonts/Lato-Bold.ttf") format(".ttf");
+    font-weight: bold;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Lato', sans-serif;
+    src: url("../assets/fonts/Lato-Italic.ttf") format(".ttf");
+    font-weight: bold;
+    font-style: italic;
 }
