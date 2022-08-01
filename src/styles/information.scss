@@ -1,7 +1,7 @@
 .info {
     background-image: url(../assets/media/plan-background.png);
     background-repeat: no-repeat;
-    background-position: 119% 4%;
+    background-position: 119% 2%;
     overflow: auto;
 
     &__top {
@@ -22,6 +22,18 @@
         margin-left: 42px;
         text-transform: uppercase;
         vertical-align: middle;
+        position: relative;
+        transition: 0.2s;
+
+        img {
+            position: absolute;
+            right: 23px
+        }
+
+        &:hover {
+            background-color: #30B01E;
+        }
+
     }
 
     &__points {

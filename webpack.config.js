@@ -7,7 +7,7 @@ const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 
 module.exports = {
   mode: "development",
-  entry: ["@babel/polyfill", "./src/index.js"],
+  entry: ["@babel/polyfill", "./src/js/index.js"],
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "index.js",

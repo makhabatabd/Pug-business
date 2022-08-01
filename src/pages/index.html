@@ -22,7 +22,7 @@
                         <div class="nav__options">
                             <ul class="nav__items">
                                 <li class="nav__item">
-                                    <a href="#features" class="nav__link">Консультации</a>
+                                    <a href="./index.html" class="nav__link">Консультации</a>
                                 </li>
                                 <li class="nav__item">
                                     <a href="./plan.html" class="nav__link">Услуги</a>
@@ -31,7 +31,7 @@
                                     <a href="./training.html" class="nav__link">Треннинги</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="#footer" class="nav__link">Блог</a>
+                                    <a href="https://www.instagram.com/" target="_blank" class="nav__link">Блог</a>
                                 </li>
                             </ul>
                         </div>
@@ -86,16 +86,16 @@
                                 </div>
                                 <ul class="navbar-nav">
                                     <li class="burger__item">
-                                        <a href="#features" class="nav__link">консультации</a>
+                                        <a href="./index.html" class="nav__link">консультации</a>
                                     </li>
                                     <li class="burger__item">
-                                        <a href="#price" class="nav__link">Услуги</a>
+                                        <a href="./plan.html" class="nav__link">Услуги</a>
                                     </li>
                                     <li class="burger__item">
-                                        <a href="#numbers" class="nav__link">Треннинги</a>
+                                        <a href="./training.html" class="nav__link">Треннинги</a>
                                     </li>
                                     <li class="burger__item">
-                                        <a href="#footer" class="nav__link">Блог</a>
+                                        <a href="https://www.instagram.com/" target="_blank" class="nav__link">Блог</a>
                                     </li>
                                 </ul>
                                 <div class="burger__icons">
@@ -150,7 +150,7 @@
                         <h1>Создаем решения</h1>
                         <h2>Для роста бизнеса</h2>
                         <p>На основе анализа данных с алгоритмами реализации</p>
-                        <button>Обсудить проблему</button>
+                        <button id="modal__open">Обсудить проблему</button>
                         <svg width="53" height="52" viewBox="0 0 53 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M25.963 51.963C25.0965 51.9647 24.2568 51.6629 23.5896 51.1101L1.33964 32.5684C0.582341 31.9389 0.1061 31.0344 0.0156918 30.0539C-0.0747164 29.0733 0.228113 28.0969 0.85756 27.3396C1.48701 26.5823 2.39151 26.1061 3.37209 26.0157C4.35267 25.9253 5.32901 26.2281 6.08631 26.8576L25.963 43.4709L45.8396 27.4509C46.219 27.1429 46.6554 26.9128 47.1239 26.774C47.5924 26.6352 48.0838 26.5904 48.5697 26.642C49.0556 26.6937 49.5264 26.8409 49.9553 27.0752C50.3841 27.3095 50.7624 27.6262 51.0684 28.0071C51.408 28.3884 51.6652 28.8358 51.8239 29.3211C51.9826 29.8064 52.0393 30.3193 51.9906 30.8275C51.9419 31.3358 51.7887 31.8286 51.5407 32.2749C51.2926 32.7212 50.9551 33.1115 50.5492 33.4213L28.2992 51.3326C27.6129 51.798 26.7903 52.02 25.963 51.963Z"
@@ -275,6 +275,33 @@
             </div>
         </div>
     </footer>
+    <section class="modal__outter">
+        <div class="modal">
+            <form id="form">
+                <div class="button__close">
+                    <button id="close">
+                        <img src="../assets/media/close.png" alt="close-button">
+                    </button>
+                </div>
+                <div class="modal__inner">
+                    <h3 class="modal__title">Оставьте заявку</h3>
+                    <input class="inputs input__name" placeholder="Ваше имя" type="text">
+                    <br />
+                    <span class="span name__span">поле обязательно*</span>
+                    <br />
+                    <input class="inputs input__email" placeholder="Email" type="email">
+                    <br />
+                    <span class="span email__span">поле обязательно*</span>
+                    <br />
+                    <textarea class="inputs input__text" placeholder="Пожалуйста опишите вашу проблему"></textarea>
+                    <br />
+                    <span class="span text__span">поле обязательно*</span>
+                    <button class="send__button">Отправить</button>
+                    <span class="success">Ваша заявка успешно отправлена!</span>
+                </div>
+            </form>
+        </div>
+    </section>
 </body>
 
 </html>

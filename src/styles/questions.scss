@@ -15,7 +15,14 @@
     margin: 0;
     font-size: 18px;
     line-height: 126%;
+    transition: 0.2s;
+
+    &:hover {
+        color: #5391DC;
+        text-decoration: underline;
+    }
 }
+
 
 .col__image {
     width: 38px;
