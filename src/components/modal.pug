@@ -1,0 +1,21 @@
+section.modal__outter
+  .modal
+    form#form
+      .button__close
+        button#close
+          img(src='../assets/media/close.png' alt='close-button')
+      .modal__inner
+        h3.modal__title Оставьте заявку
+        input.inputs.input__name(placeholder='Ваше имя' type='text')
+        br
+        span.span.name__span поле обязательно*
+        br
+        input.inputs.input__email(placeholder='Email' type='email')
+        br
+        span.span.email__span поле обязательно*
+        br
+        textarea.inputs.input__text(placeholder='Пожалуйста опишите вашу проблему')
+        br
+        span.span.text__span поле обязательно*
+        button.send__button Отправить
+        span.success Ваша заявка успешно отправлена!

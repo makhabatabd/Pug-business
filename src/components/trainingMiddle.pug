@@ -1,0 +1,19 @@
+- var text = ["Определение маркетинга как технологии роста","Организация маркетинга как сквозного бизнес-процесса", "Получение практических навыков применения технологии маркетинга","Получение практических навыков применения технологии маркетинга"]
+
+section.training__middle
+  .container
+    .training__block
+      .training__theme
+        h3 Тренинг с длинным названием в 3 текстовой строчки
+        p Для кого: руководители компаний, маркетологи, продавцы
+        p Цели бизнес-тренинга:
+        a.training__button Подробнее
+          img(src='../assets/media/training-button-arrow.png' alt='arrow')
+      .training__points
+        each item in text
+          .plan__point.training__point
+            .point__image
+              img(src='../assets/media/logo.svg' alt='logo')
+            p.training__point--text= item
+      a.training__button.md__button(href='./information.html') Подробнее
+        img(src='../assets/media/training-button-arrow.png' alt='arrow')

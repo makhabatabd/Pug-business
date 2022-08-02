@@ -22,14 +22,23 @@ module.exports = {
       directory: path.join(__dirname, "src"),
     },
   },
-  plugins: ["index", "plan", "training", "information"].map(
-    (file) =>
-      new HTMLWebpackPlugin({
-        template: "./src/" + file + ".html",
-        inject: true,
-        chunks: ["index", "main"],
-        filename: "./" + file + ".html",
-      }),
+  plugins: [
+    new HTMLWebpackPlugin({
+      filename: "index.html",
+      template: "./src/pages/index.pug",
+    }),
+    new HTMLWebpackPlugin({
+      filename: "information.html",
+      template: "./src/pages/information.pug",
+    }),
+    new HTMLWebpackPlugin({
+      filename: "plan.html",
+      template: "./src/pages/plan.pug",
+    }),
+    new HTMLWebpackPlugin({
+      filename: "training.html",
+      template: "./src/pages/training.pug",
+    }),
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin({
       patterns: [
@@ -39,10 +48,14 @@ module.exports = {
         },
       ],
     }),
-    new MiniCssExtractPlugin()
-  ),
+    new MiniCssExtractPlugin(),
+  ],
   module: {
     rules: [
+      {
+        test: /\.pug$/,
+        loader: "@webdiscus/pug-loader",
+      },
       {
         test: /\.css$/i,
         use: [MiniCssExtractPlugin.loader, "css-loader"],

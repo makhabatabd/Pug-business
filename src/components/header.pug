@@ -1,0 +1,40 @@
+header#header
+  nav.nav
+    .container
+      .nav__inner
+        .nav__logo
+          a(href='./index.html')
+            img(src='../assets/media/Logo with name.svg' alt='the logo')
+        .nav__right
+          .nav__options
+            ul.nav__items
+              li.nav__item
+                a.nav__link(href='./index.html') Консультации
+              li.nav__item
+                a.nav__link(href='./plan.html') Услуги
+              li.nav__item
+                a.nav__link(href='./training.html') Треннинги
+              li.nav__item
+                a.nav__link(href='https://exapmle.com' target='_blank') Блог
+          .nav__icons
+            include ./icons
+        .nav__burger
+          button.navbar-toggler(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasNavbar' aria-controls='offcanvasNavbar')
+            img(src='../assets/media/menu.svg' alt='burger menu')
+          #offcanvasNavbar.offcanvas.offcanvas-end
+            .offcanvas-header
+              button.btn-close(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
+            .offcanvas-body
+              .offcanvas-img
+                img(src='../assets/media/logo.svg' alt='the logo')
+              ul.navbar-nav
+                li.burger__item
+                  a.nav__link(href='./index.html') консультации
+                li.burger__item
+                  a.nav__link(href='./plan.html') Услуги
+                li.burger__item
+                  a.nav__link(href='./training.html') Треннинги
+                li.burger__item
+                  a.nav__link(href='https://www.instagram.com/' target='_blank') Блог
+              .burger__icons
+                include ./icons

@@ -1,0 +1,10 @@
+- var text = ['Как найти точки роста и определить цели?", "Как увеличить прибыль, управляя ценами?", "Как избежать проблем на старте нового бизнеса?", "Как не попасть в "черную дыру" затрат на продвижение?']
+
+section.questions
+  .container
+    .row.justify-content-around
+      each item in text
+        .col-12.col-sm-6.d-flex.align-items-center
+          .col__image
+            img(src='../assets/media/logo.svg' alt='the logo')
+          p.question= item

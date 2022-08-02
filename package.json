@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@webdiscus/pug-loader": "github:webdiscus/pug-loader",
     "bootstrap": "^5.2.0-beta1",
     "normalize.css": "^8.0.1"
   },

@@ -1,0 +1,13 @@
+- var text = ["Делаем прогноз развития рынка","Проводим сравнительный анализ стратегий конкурентов", "Определяем точки роста", "Ставим объективные цели", "Разрабатываем план и модель контроля его выполнения" ]
+
+section.plan__top
+  .container
+    .plan__intro
+      h2 Разрабатываем маркетинг-план: дорожная карта достижения целей
+      img(src='../assets/media/service-cube.png' alt='the cube')
+    .plan__points
+      each item in text
+        .plan__point
+          .point__image
+            img(src='../assets/media/logo.svg' alt='logo')
+          p= item
