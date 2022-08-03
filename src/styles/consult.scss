@@ -60,6 +60,10 @@
     padding: 14px 0;
     outline: none;
     border: none;
+
+    &:hover {
+        background: #30B01E;
+    }
 }
 
 @media screen and (max-width:$grid-breakpoints-xl) {

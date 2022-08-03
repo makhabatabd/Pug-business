@@ -5,7 +5,7 @@
 - var infos = ["Групповой онлайн-формат, продолжительность 3 дня, по 4 часа в день", "Индивидуальный онлайн-формат, продолжительность 2 дня, по 4 часа в день", "Групповой офлайн-формат, продолжительность 2 дня, по 8 часов в день"]
 
 section.info__bottom
-  img.info__line(src='../assets/media/info-line.png' alt='info-line')
+  img.info__line(src='assets/media/info-line.png' alt='info-line')
   .container
     h4 Программа бизнес-тренинга
     .info__dots
@@ -13,21 +13,21 @@ section.info__bottom
       each item in text
         .details__point.info__point
           .detail__img
-            img(src='../assets/media/plan-dot.png' alt='blue dot')
+            img(src='assets/media/plan-dot.png' alt='blue dot')
           p= item
     .info__dots
       h5 Практический инструментарий
       each item in items
         .details__point.info__point
           .detail__img
-            img(src='../assets/media/plan-dot.png' alt='blue dot')
+            img(src='assets/media/plan-dot.png' alt='blue dot')
           p= item
     .info__dots
       h5 Организация маркетинга в компании
       each note in notes
         .details__point.info__point
           .detail__img
-            img(src='../assets/media/plan-dot.png' alt='blue dot')
+            img(src='assets/media/plan-dot.png' alt='blue dot')
           p= note
     .info__dots
       h5 Кейсы-примеры:
@@ -47,12 +47,12 @@ section.info__bottom
       each paragraph in paragraphs
         .details__point.info__point
           .detail__img
-            img(src='../assets/media/plan-dot.png' alt='blue dot')
+            img(src='assets/media/plan-dot.png' alt='blue dot')
           p= paragraph
     .info__dots
       h5 Форматы проведения:
       each info in infos
         .details__point.info__point
           .detail__img
-            img(src='../assets/media/plan-dot.png' alt='blue dot')
+            img(src='assets/media/plan-dot.png' alt='blue dot')
           p= info

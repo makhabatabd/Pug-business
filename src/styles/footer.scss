@@ -20,6 +20,10 @@ footer {
 
     &:hover {
         cursor: pointer;
+
+        path {
+            fill: #47CF34;
+        }
     }
 
     &:last-child {
@@ -29,10 +33,6 @@ footer {
 
 .footer__svg svg path {
     fill: #9FA7B0;
-
-    &:hover {
-        fill: #47CF34;
-    }
 }
 
 @media screen and (max-width:$grid-breakpoints-md) {

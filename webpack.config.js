@@ -25,7 +25,11 @@ module.exports = {
   plugins: [
     new HTMLWebpackPlugin({
       filename: "index.html",
-      template: "./src/pages/index.pug",
+      template: "src/pages/index.pug",
+    }),
+    new HTMLWebpackPlugin({
+      filename: "foundation.html",
+      template: "./src/pages/foundation.pug",
     }),
     new HTMLWebpackPlugin({
       filename: "information.html",

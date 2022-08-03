@@ -5,12 +5,13 @@
     font-weight: 400;
     z-index: -1;
 
-    & a {
+    & a,
+    span {
         margin-right: 13px;
         color: #9FA7B0;
     }
 
-    &__inner a:last-child {
+    &__inner span:last-child {
         color: #282C37;
     }
 }
