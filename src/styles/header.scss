@@ -55,7 +55,10 @@
 
     &__icons svg:hover {
         cursor: pointer;
-        fill: #47CF34;
+
+        path {
+            fill: #47CF34;
+        }
     }
 
     &__burger {
