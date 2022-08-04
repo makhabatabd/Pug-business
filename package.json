@@ -9,7 +9,6 @@
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://makhabatabd.github.io/Pug-business",
   "dependencies": {
     "@webdiscus/pug-loader": "github:webdiscus/pug-loader",
     "bootstrap": "^5.2.0-beta1",
