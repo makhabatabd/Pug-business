@@ -48,31 +48,48 @@ if (!document.querySelector(".navigation")) {
     text.style.border = "1px solid #CF4747";
   }
 
+  function nameValidation() {
+    name.value.length > 3 ? undoName() : changeName();
+  }
+
+  function emailValidation() {
+    email.value.match(validRegex) ? undoEmail() : changeEmail();
+  }
+
+  function textValidation() {
+    text.value.length > 3 ? undoText() : changeText();
+  }
+
+  const validRegex =
+    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
   send.addEventListener("click", (e) => {
     e.preventDefault();
+    name.addEventListener("input", nameValidation);
 
-    name.addEventListener("input", () => {
-      name.value.length > 3 ? undoName() : changeName();
-    });
+    email.addEventListener("input", emailValidation);
 
-    email.addEventListener("input", () => {
-      email.value.length > 3 ? undoEmail() : changeEmail();
-    });
+    text.addEventListener("input", textValidation);
 
-    text.addEventListener("input", () => {
-      text.value.length > 3 ? undoText() : changeText();
-    });
     if (name.value.length < 3) changeName();
-    if (email.value.length < 3) changeEmail();
+    if (!email.value.match(validRegex)) changeEmail();
     if (text.value.length < 3) changeText();
+
     if (
       name.value.length > 3 &&
-      email.value.length > 3 &&
+      email.value.match(validRegex) &&
       text.value.length > 3
     ) {
       send.classList.add("loading");
       send.style.backgroundColor = "#9FA7B0";
       send.innerText = "Идет отправка";
+
+      name.removeEventListener("input", nameValidation);
+
+      email.removeEventListener("input", emailValidation);
+
+      text.removeEventListener("input", textValidation);
+
       setTimeout(function () {
         send.classList.remove("loading");
         success.style.display = "block";
@@ -99,6 +116,13 @@ if (!document.querySelector(".navigation")) {
     e.preventDefault();
     form.reset();
     modal.style.display = "none";
-    removeSpans();
+    undoEmail();
+    undoName();
+    undoText();
+    name.removeEventListener("input", nameValidation);
+
+    email.removeEventListener("input", emailValidation);
+
+    text.removeEventListener("input", textValidation);
   });
 }

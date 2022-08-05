@@ -23,6 +23,7 @@ module.exports = {
     },
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new HTMLWebpackPlugin({
       filename: "index.html",
       template: "src/pages/index.pug",
@@ -43,7 +44,6 @@ module.exports = {
       filename: "training.html",
       template: "./src/pages/training.pug",
     }),
-    new CleanWebpackPlugin(),
     new CopyWebpackPlugin({
       patterns: [
         {
@@ -61,20 +61,16 @@ module.exports = {
         loader: "@webdiscus/pug-loader",
       },
       {
-        test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
-      },
-      {
         test: /\.(s[ac]ss)$/i,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
       {
-        test: /\.(jpe?g|png)$/i,
-        type: "asset",
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
-        test: /\.(ttf)/,
-        type: "asset/resource",
+        test: /\.(jpe?g|png)$/i,
+        type: "asset",
       },
       {
         test: /\.js$/,
